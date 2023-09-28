@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(93, 150, 235);
+}
+
+form{
+    border: 14px solid rgb(255, 255, 255);
+    height: 20rem;
+    width: 28%;
+    margin: 180px auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+h2{
+    color: white;
+    text-decoration: underline;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.inputNombre,.inputMinute{
+   width: 100%;
+   padding: 1rem;
+   border-radius: 5px;
+   border: 1px solid white;
+   margin-bottom: 1.3rem;
+}
+
+input::placeholder{
+    color: rgb(0, 0, 0);
+}
+
+input{
+    background-color: rgb(255, 255, 255);
+    font-size: 0.9rem;
+}
+
+.btn{
+    padding: 0.5rem;
+}
+.bouton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
