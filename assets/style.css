@@ -76,7 +76,7 @@ a:hover{
 }
 .btn:hover{
     cursor: pointer;
-    background-color: rgb(49, 223, 49);
+    background-color: rgb(182, 236, 80);
     transition: all 0.5s ease-out;
 }
 main h1{
