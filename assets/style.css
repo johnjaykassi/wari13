@@ -54,10 +54,15 @@ header:nth-child(1){
     flex-direction: row;
     justify-content: space-around;
 }
-
+nav a {
+    margin-right: 2rem;
+}
 a{
     color: white;
-    margin-left: 5rem;
+    
+}
+.clients-side{
+
 }
 a:hover{
     font-weight: 700;
@@ -284,7 +289,7 @@ ul li{
 }
 .testimonals{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 4.8rem;
 }
 .testimonal-img{
