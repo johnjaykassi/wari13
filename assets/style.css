@@ -131,6 +131,10 @@ main h3{
     animation-fill-mode: backwards; */
     
 }
+.services-div{
+    border-radius: 2px;
+    box-shadow: 4px 3px 3px rgb(118, 118, 128);
+}
 .services-div:hover{
     transition: all ease-in;
     
