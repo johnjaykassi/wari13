@@ -5,6 +5,9 @@
     font-family: sans-serif;
     text-decoration: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 .index-img img{
     width: 100%;
@@ -81,10 +84,25 @@ main h3{
     
 }
 #audio{
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
+    animation-duration: 3s;
+    animation-name: glissement;
+    animation-iteration-count: 1;
 }
+@keyframes glissement {
+    from {
+      margin-left: 100%;
+      width: 200%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 90%;
+    }
+  }
+
 #partenaires{
     display: flex;
     flex-direction: row;
@@ -100,7 +118,43 @@ main h3{
     gap: 1rem;
     margin: 0 auto;
     width: 90%;
+    /* transform: translateX(300px); */
+    /* transition: all 0.7s ease-out;
+    transition-delay: 0.8s; */
+    /* animation: fadeInAnimation ease-in-out 3s;
+    animation-iteration-count: 2;
+    animation-fill-mode: backwards; */
+    
 }
+.services-div:hover{
+    transition: all ease-in;
+    
+}
+.services-div:hover {
+    animation-name: slidein;
+    animation-duration: 6s;
+}
+  
+ /* @keyframes slidein {
+    0% {
+      transform: translateX(0%);
+    }
+    50% {
+      transform: translateY(100%); 
+      transform: scaleX(-2);
+    }
+}  */
+
+/* @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+} */
+
+
 .services-title{
     text-align: center;
     font-size: 2rem;
@@ -108,13 +162,30 @@ main h3{
 .services-div img{
     transition: 5s;
     width: 100%;
+    height: 12.5rem;
 }
-#services-div
+
 .services-div img:hover {
     transform: scaleY(1);
     /* animation-name: slidein;
     animation-duration: 6s; */
   }
+.list{
+    margin-right: 2px;
+}
+ul{
+    display: block;
+    margin-left: 1.5rem;
+}
+li::marker{
+    stroke: skyblue;
+    color: red;
+    
+}
+ul li{
+    list-style-type: circle;
+    font-size: 1rem;
+}
 .icon-div{
     display: flex;
     flex-direction: row;
@@ -231,28 +302,56 @@ main h3{
     color: #777;
 }
 /* nos differents partenaires */
+.partenary{
+    margin-bottom: 2rem;
+}
 .our-partenaires{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;;
 }
-footer{
+.our-partenaires img{
+    width: 100%;
+    height: 10rem;
+}
+
+/* footer  */
+
+/* footer{
     background-color: #4d9fec;
     margin-top: 3rem;
     height: 8rem;
     color: white;
-}
-footer p{
-    text-align: center;
+} */
+footer {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #4d9fec;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
     
 }
-.fouter{
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
 
+/* Style des colonnes */
+.footer-column {
+    flex: 1;
+    margin-right: 20px; /* Espacement entre les colonnes */
 }
+
+/* Style des titres de colonne */
+.footer-column h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+/* Style du contenu de la colonne */
+.footer-column p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
 
 #experts img {
     width: 100%;
@@ -281,7 +380,7 @@ input[type="password"] {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: .6rem;
     height: 45px;
     font-size: 14px;
 }
@@ -293,7 +392,7 @@ button {
     border-radius: 3px;
     cursor: pointer;
     height: 45px;
-    width: 60%;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -355,4 +454,12 @@ button:hover {
 }
 .about-class img{
     width: 100%
+}
+
+/* responsive */
+
+@media scr(max-width:600px){
+    #services-propose{
+        background-color: yellow;
+    }
 }

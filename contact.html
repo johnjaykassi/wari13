@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="shortcut icon" href="assets/img/partenaries/Logo-nan.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/userStyle/index-style.css">
     <title>Contact</title>
 </head>
 <body>
     <header>
         <div class="logo">
-            <h1>WARI</h1>
+            <h1><a href="index.html">WARI</a></h1>
         </div>
         <nav>
             <a href="service.html">Services</a>
             <a href="contact.html">Contact</a>
             <a href="a_propos.html">A propos</a>
-            <a href="#">Home</a>
         </nav>
         <div class="btn">
             <p>ESPACE CLIENT</p>
@@ -30,28 +31,37 @@
             <img src="assets/img/pexels-chepté-cormani-1416530.jpg" alt="">
         </section>
         <section class="contact-section">
-            <p>Remplissez le formulaire ci-dessous pour nous contacter.</p>
-            <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Email address</label>
-              </div>
-              <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Password</label>
-            </div>
-            <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Password</label>
-            </div>
-            <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Password</label>
-            </div>
-            <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Password</label>
-            </div>
+            <h2>Remplissez le formulaire ci-dessous pour nous contacter.</h2>
+            <form method="post" class="formulaire">
+                <div class="inputs">
+                    <input type="email" placeholder="Email" class="inputNombre">
+                    <input type="password" placeholder="Contact" class="inputMinute">
+                    <input type="password" placeholder="Sevices" class="inputMinute">
+                    <textarea id="message" name="message" rows="4" cols="50" required placeholder="Message" style="width: 100%;"></textarea>
+                </div>
+                <!-- <div class="" style="padding: 2px; border-radius: 1rem; border: 1px solid black;">
+                    <p>Envoyez</p>
+                </div> -->
+                <div style="display: flex; flex-direction: row; justify-content: center; margin-top: 1rem; cursor: pointer; border-radius: .6rem;">
+                    <input type="submit" value="Envoyez" style="padding: .5rem;">
+                </div>
+            </form>
         </section>
     </div>
+    <footer>
+        <div class="footer-column">
+            <h2>Colonne 1</h2>
+            <p>Contenu de la colonne 1</p>
+        </div>
+        <div class="footer-column">
+            <h2>LIENS UTILES</h2>
+            <p>Contenu de la colonne 2</p>
+        </div>
+        <div class="footer-column">
+            <h2></h2>
+            <p>Contenu de la colonne 3</p>
+        </div>
+    </footer>
+    <script src="sticky.js"></script>
 </body>
 </html>
